@@ -96,8 +96,8 @@ static int arctis_7_request_battery(hid_device* device_handle)
 
     int bat = data_read[2];
 
-    if (bat > 100)
-        return 100;
+    /*if (bat > 100)
+        return 100;*/
 
     return bat;
 }
